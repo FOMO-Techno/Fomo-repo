@@ -1,10 +1,6 @@
 import Image from "next/image";
 import LoginForm from "./LoginForm";
 import Link from "next/link";
-import {
-  RegisterLink,
-  LoginLink,
-} from "@kinde-oss/kinde-auth-nextjs/components";
 
 export default function LoginPage() {
   return (
@@ -23,9 +19,7 @@ export default function LoginPage() {
           <p className="text-center text-sm text-gray-600 mb-8">
             Log in to explore expert insights...
           </p>
-          {/* <LoginForm /> */}
-          <LoginLink postLoginRedirectURL="/home">Sign in</LoginLink>
-
+          <LoginForm />
           <p className="text-center text-sm text-gray-600 mt-6">
             Don&apos;t have an account?{" "}
             <Link href="/signup" className="text-blue-600 hover:underline">
